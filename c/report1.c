@@ -1,11 +1,12 @@
-int even(int x = 1; x <= 5; x++){
-  return x;
+#include <stdio.h>
+#include "libeod.h"
+
+void main(){
+    int x;
+      printf("Input numbers : " );
+      scanf("%d", &x);
+      if(x%2==0){
+printf("even\n");
 }
-int odd(int y){
-  return y;
+else{printf("odd\n");}
 }
-for ((n = 1; n <= 5; n++));
-if (($n % 2 == 0));
-echo "$n is even"
-else
-echo "$n is odd"
