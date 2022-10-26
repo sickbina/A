@@ -1,15 +1,17 @@
 #!/bin/bash
 
 a=1
-while[ "$a" != '0']; do
+while [ $a != 0 ]; do
   echo -n "Input : "
   read a
-  if [ "$a" != '0' ]; then
-    for k in 1 2 3 4 5 6 7 8 9
-    do
-      echo"$a" $k
-= `expr $a \* $k`"
+  if [ $a != 0 ]; then
+    if [$a -lt 2 -o $a -gt 9]; then
+      echo"This program is require nuber 2~9"
+    else
+    for ((k=1;k<=9;k++)) do
+      echo"$a * $k = `expr $a \* $k`"
     done
-  fi
+   fi
+fi
 done
 echo "Exit~!!"
