@@ -1,11 +1,11 @@
 #!/bin/bash
 
 if [ $# -eq 0 ]; then
-  echo "Enter the Contry name.!!"
-elif if [ $# -ge 2 ]; then
-  echo "This scripts require only one Parameter. "
+  echo "Input the entry name~!!"
+elif [ $# -ge 2 ]; then
+  echo "This program require only one Parameter. "
 else
-  case $1 in
+  case "$1" in
         kr)
               echo "Seoul";;
         us)
@@ -15,6 +15,6 @@ else
         jp)
               echo "Tokyo";;
         *)
-              echo "Your Entry => $1 is not in the list."
+              echo "Your entry=>$1 is not in the list"
   esac
 fi
