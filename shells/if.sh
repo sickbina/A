@@ -1,6 +1,6 @@
 #!/bin/bash
 
-man=30
+man=10
 woman=20
 if [ $man -lt $woman ]
 then
